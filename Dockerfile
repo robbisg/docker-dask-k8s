@@ -10,6 +10,7 @@ RUN conda install --yes \
     pandas \
     distributed \
     scikit-learn \
+    nilearn \
     && conda clean -tipsy
 
 #COPY prepare.sh /usr/bin/prepare.sh
