@@ -18,6 +18,8 @@ RUN conda env create -f /tmp/environment.yaml
 RUN conda clean -tipsy
 RUN echo "source activate neuropy" > ~/.bashrc
 ENV PATH /opt/conda/envs/neuropy/bin:$PATH
+#RUN source activate neuropy
+RUN pip freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U
 #COPY prepare.sh /usr/bin/prepare.sh
 #RUN chmod +x /usr/bin/prepare.sh
 
