@@ -4,6 +4,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     make \
     automake \
     gcc \
+    swig \
+    python-tk \
     build-essential \
     g++ \
     cpp \

@@ -12,6 +12,7 @@ dependencies:
   - tk
   - pip:
      - mne
+     - pymvpa2
      - jupyter
      - seaborn
      - nibabel
@@ -24,5 +25,8 @@ dependencies:
      - dask-kubernetes
      - distributed
      - joblib
-     - scikit-learn
      - nilearn
+     - scikit-learn
+     - "--editable=git+https://github.com/robbisg/pyitab.git#egg=pyitab"
+
+
