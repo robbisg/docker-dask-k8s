@@ -27,6 +27,6 @@ dependencies:
      - joblib
      - nilearn
      - scikit-learn
-     - "--editable=git+https://github.com/robbisg/pyitab.git#egg=pyitab"
+     - "--editable=git+https://github.com/robbisg/pyitab.git@dask#egg=pyitab"
 
 
